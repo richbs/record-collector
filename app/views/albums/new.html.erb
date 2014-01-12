@@ -1,0 +1,18 @@
+<h1 id="rubyist">Rubyist</h1>
+
+<%= form_for :album, url: albums_path  do |f| %>
+
+<p>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</p>
+
+<p>
+  <%= f.label :year, "Year" %>
+  <%= f.text_field :year %>
+</p>
+
+<p>
+  <%= f.submit "Submit", :disable_with => 'Submiting...' %>
+</p>
+<% end %>
